@@ -1,5 +1,8 @@
 from flask import render_template
 from igedu import app
+@app.route("/ads.txt", methods=["GET", "POST"])
+def ads():
+    return('ads.txt')
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
