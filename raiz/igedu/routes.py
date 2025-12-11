@@ -119,3 +119,4 @@ def reg():
 def sequ():
     return render_template('Sequencianum.html')
 
+

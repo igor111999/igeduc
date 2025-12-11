@@ -1,5 +1,5 @@
 from flask import render_template
-from igedu import app
+from  igedu import app
 
 @app.route("/cine", methods=["GET", "POST"])
 def cine():
