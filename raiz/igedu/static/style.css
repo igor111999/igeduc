@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #333;
+    background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
 div.container {
@@ -20,11 +20,11 @@ div.container {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(#0d0d0d, #212121);
+            background: linear-gradient(#fff, #212121);
         }
 
         div.container a {
-            color: #fff;
+            color: #000;
             text-decoration: none;
             font: 20px Raleway;
             margin: 0px 10px;
@@ -35,18 +35,18 @@ div.container {
         }
 
         .brown {
-            background: #000;
+            background: #fff;
         }
         /* Highlight text out  */
 
         div.highlightTextOut a {
-            color: rgba(255, 255, 255, 0.445);
+            color: #000;
         }
 
         div.highlightTextOut a:before,
         div.highlightTextIn a:before {
             position: absolute;
-            color: #fff;
+            color: #000;
             font-weight: 800;
             top: 0px;
             left: 0px;
@@ -74,7 +74,7 @@ div.container {
         }
 
 h1 {
-    color: #FFF;
+    color: #000;
     font-family: "Times New Roman", sans-serif;
     margin: 20px 0;
 }
@@ -88,7 +88,7 @@ h1 {
 }
 
 .barradeprogresso {
-    background-color: #0c0c0c;
+    background-color: #fff;
     height: 100%;
     transition: all ease .5s;
 }
@@ -108,7 +108,7 @@ h1 {
 }
 
 .pergunta {
-    color: #FFF;
+    color: #000;
     font-size: 18px;
     margin: 20px 0;
 }
@@ -143,7 +143,7 @@ h1 {
 }
 
 .areadepontuacao {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #000;
     padding: 20px;
     border-radius: 20px;
     margin: 10px;
