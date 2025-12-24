@@ -23,7 +23,7 @@ def jog():
 
 @app.route("/igor", methods=["GET", "POST"])
 def igor():
-    return render_template('igor.html')
+    return render_template('ICG.html')
 
 @app.route("/", methods=["GET", "POST"])
 def homepage():
