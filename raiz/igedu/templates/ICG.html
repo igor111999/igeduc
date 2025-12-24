@@ -201,6 +201,13 @@
             text-align: center;
         }
 
+        .carousel-container::-webkit-scrollbar {
+            display: none;
+        }
+        .carousel-container {
+            scrollbar-width: none;
+        }
+
         @media screen and (max-width:600px){
             html {
                 overflow-x: hidden;
@@ -255,89 +262,37 @@
         <!-- bloco1 -->
         <ins class="adsbygoogle "style="display:block "data-ad-client="ca-pub-3911623873848871 "data-ad-slot="8650021298 "data-ad-format="auto "data-full-width-responsive="true "></ins>
         <script> (adsbygoogle = window.adsbygoogle || []).push({});</script>
-        <div class="card-group ">
-            <marquee scrollamount="2">
-                    <div class="card">
-                        <textarea class="card ">OUTLET</textarea>
-                        <img src="{{url_for('static', filename='imgs/OV.jpg')}}">
-                        <h5 class="card-text ">Loja Online</h5>
-                        <h5 class="card-text "></h5>
-                        <h5 class="card-text "></h5>
-                        <h5 class="card-text "><small class="text-muted "></small></h5>
-                    </div>
-                    <div class="card">
-                        <textarea class="card ">ITALO PERSONAL</textarea>
-                        <img src="{{url_for('static', filename='imgs/ita.png')}}">
-                        <h5>Treinos personalizados</h5>
-                        <a href=" ">
-                            <h5></h5>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <textarea class="card ">AULAS PARTICULARES</textarea>
-                        <img src="{{url_for('static', filename='imgs/ms.png')}}">
-                        <a href="{{ url_for('igor') }}">
-                            <h5>Entre em contato</h5>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <textarea class="card ">AULAS</textarea>
-                        <img src="{{url_for('static', filename='imgs/you.png')}}">
-                        <a href="https://www.youtube.com/ ">
-                            <h5>Youtube</h5>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <textarea class="card ">CRIE SEU SITE</textarea>
-                        <img src="{{url_for('static', filename='imgs/site.png')}}">
-                        <h5 class="card-text ">Sites para empresas</h5>
-                        <h5 class="card-text ">Sites para post de informações</h5>
-                        <h5 class="card-text ">Sites para influenciadores(Blog)</h5>
-                        <h5 class="card-text "><small class="text-muted ">Entre em contato</small></h5>
-                    </div>
-                    <div class="card">
-                        <textarea class="card ">OFFICE 365</textarea>
-                        <img src="{{url_for('static', filename='imgs/office.png')}}">
-                        <h5>Office 365</h5>
-                        <a href=" ">
-                            <h5>Acesso a lista de atalho</h5>
-                        </a>
-                        <a href=" ">
-                            <h5>Acesso a lista de formulas</h5>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <textarea class="card ">ENEM</textarea>
-                        <img src="{{url_for('static', filename='imgs/enem.png')}}">
-                        <a href=" https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos ">
-                            <h5>Provas anteriores</h5>
-                        </a>
-                        <a href=" ">
-                            <h5>Estude para o Enem</h5>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <textarea class="card ">OLIMPÍADAS</textarea>
-                        <img src="{{url_for('static', filename='imgs/olimp.png')}}">
-                            <h5>
-                            <ul class="olimp ">
-                                <li><a href="http://www.obmep.org.br/ ">OBMEP</a></li>
-                                <li><a href="https://www.obm.org.br/ ">OBM</a></li>
-                                <li><a href="https://www.cangurudematematicabrasil.com.br/ ">CANGURU</a></li>
-                                <li><a href="https://olimpiadamandacaru.com.br/ ">MANDACARU</a></li>
-                                <li><a href="https://olimpiadasinternacionais.org/amo/ ">AMO</a></li>
-                                <li><a href="https://olimpiadasinternacionais.org/produto/smc/ ">SINGA</a></li>
-                                <li>
-                                    <a href="# "></a>
-                                </li>
-                                <li>
-                                    <a href="# "></a>
-                                </li>
-                            </ul>
-                        </h5>
-                    </div>
-            </marquee>    
+        <div class="carousel-container">
+        <div class="carousel-track">
+
+            <div class="card">
+                <h5>OUTLET</h5>
+                <img src="{{url_for('static', filename='imgs/OV.jpg')}}">
+                <p>Loja Online</p>
+            </div>
+
+            <div class="card">
+                <h5>ITALO PERSONAL</h5>
+                <img src="{{url_for('static', filename='imgs/ita.png')}}">
+                <p>Treinos personalizados</p>
+            </div>
+
+            <div class="card">
+                <h5>AULAS PARTICULARES</h5>
+                <img src="{{url_for('static', filename='imgs/ms.png')}}">
+                <a href="{{ url_for('igor') }}">Entre em contato</a>
+            </div>
+
+            <div class="card">
+                <h5>AULAS</h5>
+                <img src="{{url_for('static', filename='imgs/you.png')}}">
+                <a href="https://www.youtube.com/">Youtube</a>
+            </div>
+
+            <!-- continue com os outros cards -->
+            
         </div>
+    </div>
         <div class="card-groupe ">
             <div class="card2 ">
                 <div class="card-body ">
@@ -372,12 +327,12 @@
                                 <p>PROFESSOR </p>
                                 <p>PROGRAMADOR</p>
                                 <P><a href="" alt="PORTFOLIO ">PORTFOLIO</a></P>
-                                <textarea>PYTHON</textarea>
-                                <textarea>JAVASCRIPT</textarea>
-                                <textarea>HTML E CSS</textarea>
-                                <textarea>DATA SCIENCE</textarea>
-                                <textarea>SQL</textarea>
-                                <textarea>OFFICE 365</textarea>
+                                <h1>PYTHON</h1>
+                                <h1>JAVASCRIPT</h1>
+                                <h1>HTML E CSS</h1>
+                                <h1>DATA SCIENCE</h1>
+                                <h1>SQL</h1>
+                                <h1>OFFICE 365</h1>
                             </h3>
                         </h5>
                     </div>
