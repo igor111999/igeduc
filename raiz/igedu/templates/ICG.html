@@ -176,20 +176,40 @@
             padding: 5px;
             width: 400px;
         }
-        
-        textarea {
-            background-color: blueviolet
+        .carousel-container {
+            overflow: hidden;
+            width: 100%;
+            padding: 20px 0;
         }
-        
+
+        .carousel-track {
+            display: flex;
+            gap: 20px;
+            animation: scroll 25s linear infinite;
+        }
+
         .card {
-            background: linear-gradient(linear-gradient, #212121);
+            min-width: 250px;
+            background: white;
             border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            padding: 10px;
-            margin: 10px;
-            width: 250px;
-            display: flex;;
+            padding: 15px;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            flex-shrink: 0;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
         }
         .footer {
             background: blue;
@@ -199,13 +219,6 @@
             left: 0;
             font-family: "Raleway", sans-serif;
             text-align: center;
-        }
-
-        .carousel-container::-webkit-scrollbar {
-            display: none;
-        }
-        .carousel-container {
-            scrollbar-width: none;
         }
 
         @media screen and (max-width:600px){
@@ -263,7 +276,7 @@
         <ins class="adsbygoogle "style="display:block "data-ad-client="ca-pub-3911623873848871 "data-ad-slot="8650021298 "data-ad-format="auto "data-full-width-responsive="true "></ins>
         <script> (adsbygoogle = window.adsbygoogle || []).push({});</script>
         <div class="carousel-container">
-        <div class="carousel-track">
+        <div class="carousel-track" id="carousel">
 
             <div class="card">
                 <h5>OUTLET</h5>
@@ -289,8 +302,19 @@
                 <a href="https://www.youtube.com/">Youtube</a>
             </div>
 
-            <!-- continue com os outros cards -->
-            
+            <!-- DUPLICAÇÃO para loop infinito -->
+            <div class="card">
+                <h5>OUTLET</h5>
+                <img src="{{url_for('static', filename='imgs/OV.jpg')}}">
+                <p>Loja Online</p>
+            </div>
+
+            <div class="card">
+                <h5>ITALO PERSONAL</h5>
+                <img src="{{url_for('static', filename='imgs/ita.png')}}">
+                <p>Treinos personalizados</p>
+            </div>
+
         </div>
     </div>
         <div class="card-groupe ">
@@ -339,7 +363,6 @@
                 </div>
             </center>    
         </div>
-
     </main>
     <footer class="footer">
         <h3 style="background-color: transparent;"><a href="{{ url_for('igor') }}">DESENVOLVIDO POR IGOR CARVALHO</a></H3>
