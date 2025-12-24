@@ -20,7 +20,7 @@ div.container {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(#fff, #212121);
+            background: linear-gradient(#7e40bf, #212121);
         }
 
         div.container a {
@@ -108,7 +108,7 @@ h1 {
 }
 
 .pergunta {
-    color: #000;
+    color: #fff;
     font-size: 18px;
     margin: 20px 0;
 }
